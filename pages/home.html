@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container">
-        <header>
+        <div class="header">
             <div class="logo">
                 <img src="../img/logo.png" alt="Logo da Loja" style="width: 100px; height: auto;">
             </div>
@@ -20,15 +20,28 @@
                     <li><img src="../img/kiosk.png" alt="Loja" class="icon"></li>
                     <li><img src="../img/user.png" alt="Usuário" class="icon"></li>
                     <li><img src="../img/setting.png" alt="Configurações" class="icon"></li>
-                    <li classd="exit"><img src="../img/exit.png" alt="Sair" class="icon"></li>
+                    <li class="exit"><img src="../img/exit.png" alt="Sair" class="icon"></li>
                 </ul>
             </nav>
-        </header>
-        <div class="search-bar">
-            <input type="text" placeholder="Pesquisar">
-            <button type="submit"><i class="fas fa-search"></i></button></div>
+        </div>
+            <!-- Adicionando elementos no lado superior direito -->
+       <header>
+           <div class="search-bar">
+               <input type="text" placeholder="Pesquise por livros, autor, edição...">
+               <button type="submit"><i class="fas fa-search"></i></button>
+           </div>
+
+       </header>
+       
+        
         <main>
-            <!-- Conteúdo da sua página vai aqui -->
+            <div class="categories">
+                <button class="category-btn">Categoria 1</button>
+                <button class="category-btn">Categoria 2</button>
+                <button class="category-btn">Categoria 3</button>
+                <!-- Adicione mais botões de categoria conforme necessário -->
+            </div>
+            
         </main>
     </div>
 </body>
