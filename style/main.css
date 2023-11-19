@@ -22,6 +22,7 @@ body {
 
 .logo {
     margin-bottom: 20px;
+    
 }
 
 .logo img {
@@ -65,7 +66,7 @@ body {
 }
 
 main {
-    flex: 1;
+    
     padding: 20px;
 }
 /* Estilos para a barra de pesquisa no topo */
@@ -99,19 +100,176 @@ main {
     padding: 20px;
 }
 
-.categories {
+.categories-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.categories {
+    margin-top: 20px;
+    
+    display: flex;
+    justify-content: space-around; /* Ajuste conforme desejado */
 }
 
 .category-btn {
     padding: 10px 20px;
-    border: 2px solid #ccc;
+    border: 2px solid #16364C;
+    color:#16364C;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s; /* Transição suave para a mudança de cor */
+    margin-right: 10px;
+    background-color: white;
+    transition: background-color 0.3s;
 }
 
 .category-btn:hover {
-    background-color: #ddd;
+    background-color: #16364C;
+    color:white;
 }
+
+.title{
+    margin-top: 40px;
+    margin-left: 35px;
+    color:#143042;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+
+.books-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.book {
+    text-align: center;
+    margin-bottom: 30px; /* Aumentando a margem inferior entre os livros */
+}
+
+.book img {
+    max-width: 80%; /* Reduzindo o tamanho da imagem para 80% da largura do contêiner pai */
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+   
+}
+
+.book-info {
+    margin-top: 10px; /* Aumentando a margem superior da informação do livro */
+    color:#00090f;
+    font-size: 15px;
+}
+
+.book-info h3 {
+    margin: 0;
+}
+
+.book-info p {
+    margin: 5px 0; /* Mantendo alguma margem superior e inferior para o nome do autor */
+    color: #3d3d3d;
+    
+}
+
+/* Adicione este CSS ao seu arquivo main.css ou onde você mantém seus estilos */
+
+/* Adicione este CSS ao seu arquivo main.css ou onde você mantém seus estilos */
+
+.books-trend {
+    display: flex;
+    overflow-x: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.book-t {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo na direção transversal (horizontal) */
+    margin-right: 10px;
+}
+
+.book-t img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+
+footer {
+    background-color: #0d2a3d;
+    color: white;
+    padding: 20px 0;
+    margin-top: auto; /* Faz o rodapé ficar no final da página */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    max-width: 300px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+}
+
+.footer-section h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    margin: 0;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+}
+/* Adicione este CSS ao seu arquivo main.css ou onde você mantém seus estilos */
+
+.footer-logo {
+    max-width: 150px;
+    height: auto;
+    margin-bottom:0px;
+}
+
+/* Adicione este CSS ao seu arquivo main.css ou onde você mantém seus estilos */
+
+.hr-foot {
+    border: 1px solid #0F3249; /* Largura de 1px e cor vermelha */
+    margin-top: 10px; /* Ajuste conforme necessário */
+}
+
+/* Adapte conforme necessário para atender às suas preferências visuais */
