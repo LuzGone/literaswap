@@ -45,7 +45,7 @@ body {
 }
 
 .sidebar li {
-    margin-bottom: 10px;
+    margin-bottom: 50px;
 }
 
 .sidebar a {
@@ -62,7 +62,7 @@ body {
     margin-bottom: 15px;
 }
 .exit{
-    margin-top:80px;
+    margin-top:15em;
 }
 
 main {
