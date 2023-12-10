@@ -172,7 +172,11 @@ main {
 .book-info p {
     margin: 5px 0; /* Mantendo alguma margem superior e inferior para o nome do autor */
     color: #3d3d3d;
+   
     
+}
+a{
+    text-decoration: none;
 }
 
 /* Adicione este CSS ao seu arquivo main.css ou onde você mantém seus estilos */
