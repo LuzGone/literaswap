@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+.teste {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 30px;
+    color: #00090f;
+    font-size: 15px;
+}
+
+.nome {
+    margin-bottom: 5px;
+}
+
+.sinopse {
+    margin-left: 20px;
+}
+
+.book-info-pag {
+    display: flex;
+}
+
+.book-info-pag img {
+    float: left;
+    margin-right: 10px;
+}
+
+.book-info-pag .nome {
+    float: left;
+    margin-right: 10px;
+}
+
+.book-info-pag .sinopse {
+    float: left;
+}
+
+p{
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+}
+h1{
+    font-family: 'Manrope', sans-serif;
+}
+
+.autor{
+    font-family: 'Manrope', sans-serif;
+    color: #8f8f8f;
+    font-size: 20px;
+}
+
+ /* Estilos para os botões */
+ .buttons {
+    display: flex;
+    margin-top: 20px;
+}
+.outro{
+    display: flex;
+    margin-top: 20pxs;
+}
+
+.button {
+    background-color: transparent;
+    font-size: 20px;
+    color: #16364C;
+    border: 2px solid #16364C;
+    border-radius: 20px;
+    padding: 8px 50px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+    
+}
+
+.button:hover {
+    background-color: #16364C;
+    color: white;
+}
+.button-like:hover {
+    background-color: #16364C;
+    color: white;
+}
+.button-like{
+    background-color: transparent;
+    font-size: 20px;
+    color: #16364C;
+    border: 2px solid #16364C;
+    border-radius: 50%;
+    padding: 8px 10px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.precos{
+    margin-top: 50px;
+    color:#8f8f8f;
+    display: flex;
+}
+.livro-novo{
+      font-family: 'Manrope', sans-serif;
+        font-size: 20px;
+        color: #16364C;
+    
+}
+
+.novo, .usado {
+   margin-right: 10px;
+}
+
+hr{
+    height: 80px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.informacoes {
+    padding: 10px 0;
+    background-color: #F0E7F4;
+    margin-left:30px;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    color: #8f8f8f;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center; 
+    
+    
+}
+
+.pags, .idms, .edt, .isdn, .disponivel {
+    margin-right: 10px;
+   
+ }
