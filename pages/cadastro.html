@@ -15,7 +15,7 @@
       font-family: Arial, sans-serif;
       display: flex;
       height: 100vh;
-      background-color: #f1f1f1;
+      background-color: #16364C;
     }
 
     #container {
@@ -35,13 +35,21 @@
       height: auto;
     }
 
-    #form-container {
+    .form-container {
       flex: 1;
       padding: 20px;
       box-sizing: border-box;
-      background-color: #fff;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 1200px;
+      width: 45%;
+      margin: 5px;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      margin-left: 40px;
+      margin-right: 40px;
+      background-color: #547b94;
+      
     }
 
     #user-form {
@@ -58,7 +66,7 @@
 
     #register-btn {
       padding: 10px;
-      background-color: #4caf50;
+      background-color: #16364C;
       color: #fff;
       border: none;
       border-radius: 4px;
@@ -69,10 +77,10 @@
 <body>
 
 <div id="container">
-  <div id="image-container">
+  <div class="image-container">
     <img id="image" src="../img/boyreading.png" alt="Background Image">
   </div>
-  <div id="form-container">
+  <div class="form-container">
     <h2>Cadastro de Usuário</h2>
     <form id="user-form">
       <label for="name">Nome:</label>
@@ -91,6 +99,16 @@
     </form>
   </div>
 </div>
+
+<footer class="footerlogin">
+    <hr class="hr-foot">
+    <div class="footer-bottom">
+        <img src="../img/logo.png" alt="Logo da Loja" class="footer-logo">
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2023 LiteraSwap. Todos os direitos reservados.</p>
+    </div>
+</footer>
 
 <script>
   function registerUser() {
