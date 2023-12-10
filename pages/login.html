@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/main.css">
+    <script src="https://kit.fontawesome.com/1dd9346e5a.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../img/bk.png" type="image/x-icon">
+    <title>LiteraSwap</title>
+</head>
+<body class="bodylogin">
+    <div class="headerlogin">
+        <div class="image-container">
+            <img id="image" src="../img/girlreading.png" alt="Background Image">
+        </div>
+        <div class="login-container">
+            <h2 class="titulo">Login</h2>
+            <p>Você está no LiteraSwap</p>
+            <form class="login-form">
+                <label for="username">Login:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+                <button class="loginbtn" type="button" onclick="login()">Logar</button>
+            </form>
+            <div class="register-link" onclick="redirectToRegister()">Novo por aqui? Registre-se</div>
+        </div>
+    </div>
+    <footer class="footerlogin">
+        <hr class="hr-foot">
+        <div class="footer-bottom">
+            <img src="../img/logo.png" alt="Logo da Loja" class="footer-logo">
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 LiteraSwap. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        function login() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            if (!username || !password) {
+                alert('Por favor, preencha todos os campos.');
+                return;
+            }
+
+            // Verificar se as credenciais estão corretas
+            if (username === 'usuario' && password === 'senha') {
+                alert('Login bem-sucedido!');
+                } else {
+                alert('Credenciais inválidas. Tente novamente.');
+            }
+        }
+
+        function redirectToRegister() {
+            // Implementar o redirecionamento para a página de registro aqui
+            alert('Redirecionar para a página de registro');
+        }
+    </script>       
+    
+</body>
+</html>
+
+

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/main.css">
+    <script src="https://kit.fontawesome.com/1dd9346e5a.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../img/bk.png" type="image/x-icon">
+    <title>LiteraSwap</title>
+</head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      height: 100vh;
+      background-color: #f1f1f1;
+    }
+
+    #container {
+      display: flex;
+      max-width: 1200px;
+      width: 100%;
+      margin: auto;
+    }
+
+    #image-container {
+      flex: 1;
+      overflow: hidden;
+    }
+
+    #image {
+      width: 100%;
+      height: auto;
+    }
+
+    #form-container {
+      flex: 1;
+      padding: 20px;
+      box-sizing: border-box;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #user-form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #user-form input {
+      margin-bottom: 10px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    #register-btn {
+      padding: 10px;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div id="container">
+  <div id="image-container">
+    <img id="image" src="../img/boyreading.png" alt="Background Image">
+  </div>
+  <div id="form-container">
+    <h2>Cadastro de Usuário</h2>
+    <form id="user-form">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="nickname">Apelido:</label>
+      <input type="text" id="nickname" name="nickname" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Senha:</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="button" id="register-btn" onclick="registerUser()">Cadastrar</button>
+    </form>
+  </div>
+</div>
+
+<script>
+  function registerUser() {
+    
+    var name = document.getElementById('name').value;
+    var nickname = document.getElementById('nickname').value;
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
+
+    
+    if (!name || !nickname || !email || !password) {
+      alert('Por favor, preencha todos os campos.');
+      return;
+    }
+
+    
+    alert('Usuário cadastrado com sucesso!');
+  }
+</script>
+
+</body>
+</html>
